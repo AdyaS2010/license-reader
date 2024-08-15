@@ -43,4 +43,13 @@ int main(int argc, char *argv[])
             free(buffer);
         }
     }
+
+    for (int i = 0; i < 8; i++)
+    {
+        printf("%s\n", plates[i]);
+        // Free memory!!!
+        free(plates[i]);
+    }
+    fclose(infile);
+    return 0;
 }
