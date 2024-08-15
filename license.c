@@ -26,4 +26,21 @@ int main(int argc, char *argv[])
     {
         // Allocate a new buffer for each plate number
         char *buffer = malloc(8 * sizeof(char));
+
+        // Read plate number to new buffer
+        if (fread(buffer, 1, 7, infile) == 7)
+        {
+            // Replace '\n' with '\0'
+            buffer[6] = '\0';
+
+            // Save plate number in array
+            plates[idx] = buffer;
+            idx++;
+        }
+        else
+        {
+            // If fread didn't read 7 characters, free buffer
+            free(buffer);
+        }
+    }
 }
