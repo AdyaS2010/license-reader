@@ -43,6 +43,11 @@ $ ./license plates.txt
 34ZZ51
 ```
 
+![image](https://github.com/user-attachments/assets/0d7d7d2b-a052-4aee-95b1-13cf85c6f037)
+
+![image](https://github.com/user-attachments/assets/e19296ea-f156-4e51-9455-caf4dd94f566)
+*Reads data from the infile, and outputs it, as shown!*
+
 ## Contributing
 1. Fork the repository.
 2. Create a new branch:
